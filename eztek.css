@@ -22,12 +22,13 @@ header {
   align-items: center;
   height: 85px;
   color: #fff;
+  position:sticky;
+  top: 0;
+  z-index: 4;
+  font-weight: 500;
   width: 100%;
   font-size: 16px;
-  position: sticky;
-  top: 0;
-  z-index: 3;
-  font-weight: 500;
+  
 }
 
 
@@ -65,10 +66,9 @@ button {
   margin-top: 20px;
 }
 .logo {
-  width: 11rem;
-  
-  position: relative;
-left: 2.5rem;
+width: 10%;
+position: absolute;
+left: 3.5%;
 
 }
 .topnav {
@@ -88,6 +88,7 @@ body img {
   display: flex;
   background-size: cover;
   background-repeat: no-repeat;
+  
 }
 .company-section img {
   width: 83%;

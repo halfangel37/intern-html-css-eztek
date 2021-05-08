@@ -9,7 +9,7 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
-    <!-- Bootstrap CSS -->
+    <!-- CSS -->
 
     <link rel="stylesheet" href="eztek.css" />
     <link rel="stylesheet" href="responsive.css" />
@@ -18,9 +18,8 @@
   </head>
 
   <body>
-    <div class="container">
-      <header>
-        
+    <div class="container">   
+      <header>        
         <div class="logo">
           <svg
             version="1.1"
@@ -111,39 +110,41 @@
             </g>
           </svg>
         </div>
+        
         <div class="topnav" id="myTopnav">
           <a>COMPANY</a>
           <a>SERVICES</a>
           <a>GETTING STARTED</a>
-          <a>CAREERS</a>
+          <a>CAREERS</a>   
         </div>  
         <div>
           <button type="button" class="header-btn">GET IN TOUCH</button>  
         </div>
-        <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a> -->
+      
+        <div class="menu-icon" onclick="myFunction()"><i class="fa fa-bars"></i></div>
+        <div class="header-responsive"  id="menu-responsive">
+          <div class="topnav-responsive" id="myTopnav-responsive">
+            <a>COMPANY</a>
+            <a>SERVICES</a>
+            <a>GETTING STARTED</a>
+            <a>CAREERS</a>  
+            <button type="button" class="header-btn-responsive">GET IN TOUCH</button>
+          </div>  
+        </div>   
         <script>
           function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-              x.className += "responsive";
+            var x = document.getElementById("menu-responsive");
+            if (x.style.display === "none") {
+              x.style.display = "block";
             } else {
-              x.className = "topnav";
+              x.style.display = "none";
             }
           }
-          </script>
+          </script>   
                 
       </header>
-      <!-- <div class="topnav.responsive" id="myTopnav">
-        <a>COMPANY</a>
-        <a>SERVICES</a>
-        <a>GETTING STARTED</a>
-        <a>CAREERS</a>
-      </div>  
-      <div>
-        <button type="button" class="header-btn">GET IN TOUCH</button>  
-      </div> -->
+        
+    
       <!-- company-section -->
       <div class="company-section">
         <div class="left-content">
@@ -400,7 +401,7 @@
             </div>
           </div>
       </div>
-      <footer>
+      <!-- <footer>
         <div>
           This website uses cookies to ensure you get the best experience on our
           website.
@@ -408,7 +409,7 @@
         <div>
           <button type="button" class="footer-btn">GOT IT</button>
         </div>
-      </footer>
+      </footer> -->
     </div>
   </body>
 </html>
