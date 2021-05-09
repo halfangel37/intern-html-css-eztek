@@ -1,4 +1,5 @@
 /* header responsive */
+
 header .menu-icon {
   display: none;
 }
@@ -29,7 +30,7 @@ header .menu-icon {
   }
   header .menu-icon {
     display: block;
-    padding-left: 96%;
+    padding-left: 90%;
     font-size: 30px;
     cursor: pointer;
     margin-bottom: 1rem;
@@ -67,6 +68,7 @@ header .menu-icon {
 }
 /* ---------- */
 /* company section responsive */
+
 @media only screen and (max-width: 1450px) {
   .company-section img {
     margin-top: 20%;
@@ -125,6 +127,7 @@ header .menu-icon {
 }
 /* ---------- */
 /* props-bar section responsive  */
+
 @media only screen and (max-width: 1024px) {
   .props-bar-section {
     height: auto;
@@ -183,5 +186,162 @@ header .menu-icon {
   }
   .services h4 {
     margin: 3rem auto;
+  }
+}
+/* ---------- */
+/* angular section responsive*/
+
+@media only screen and (max-width: 1500px) {
+  .angular-picture img {
+    min-width: 90%;
+    margin-top: 10%;
+  }
+  .api-picture img {
+    min-width: 85%;
+    margin-top: 15%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .angular-api {
+    display: none;
+  }
+  .angular-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .angular-picture {
+    min-width: 80%;
+    padding-bottom: 3rem;
+  }
+  .angular-love {
+    margin-top: 2%;
+    padding-left: 0;
+    width: 90%;
+    padding-bottom: 10%;
+  }
+}
+/* ---------- */
+/* difference-section responsive */
+
+@media only screen and (max-width: 1100px) {
+  .difference-section {
+    display: block;
+  }
+  .make-difference {
+    width: 100%;
+  }
+  .make-difference-content {
+    margin-left: 5%;
+    margin-top: 3%;
+    width: 90%;
+  }
+  .make-difference-content .title {
+    margin-bottom: 10%;
+    font-size: 40px;
+  }
+  .we-do {
+    width: 100%;
+  }
+  .we-do-content {
+    margin-left: 5%;
+    margin-top: 4%;
+    padding-top: 5%;
+  }
+  .content-wrap-2 {
+    width: 95%;
+  }
+  .ceo {
+    width: 95%;
+    padding-bottom: 10%;
+  }
+  .vertical-line {
+    padding-top: 15%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .ceo {
+    width: 80%;
+  }
+  .vertical-line {
+  }
+}
+/* ---------- */
+/* slide-section responsive */
+
+@media only screen and (max-width: 1100px) {
+  .slide {
+    height: 350px;
+  }
+}
+/* ---------- */
+/* Join with us section responsive */
+
+@media only screen and (max-width: 850px) {
+  form {
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .first-name,
+  .email,
+  .last-name,
+  .telephone,
+  .message {
+    width: auto;
+  }
+
+  input[type="text"],
+  [type="email"] {
+    font-size: 16px;
+  }
+  .submit {
+    width: 220px;
+    margin: 0 auto;
+  }
+  .form-button {
+    width: 100%;
+    margin-top: 4rem;
+    height: 2.2rem;
+    font-size: 16px;
+  }
+}
+/* ---------- */
+
+/* Join with us section responsive */
+@media only screen and (max-width: 1800px) {
+  .join-items {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .join-items {
+    flex-wrap: wrap;
+  }
+  .item {
+    width: 30%;
+  }
+  .item-1,
+  .item-2,
+  .item-3,
+  .item-4 {
+    margin-right: 10%;
+    margin-bottom: 5%;
+  }
+  .join-items {
+    margin: 0 auto;
+    padding-top: 0rem;
+    width: auto;
+    font-size: 16px;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .join-items {
+    flex-direction: column;
+    margin-left: 1rem;
+  }
+  .item-detail {
+    font-size: 14px;
   }
 }
