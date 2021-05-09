@@ -20,17 +20,15 @@ header {
   display: flex;
   background-color: #172035;
   align-items: center;
-  height: 85px;
+
   color: #fff;
-  position:sticky;
+  position: sticky;
   top: 0;
   z-index: 4;
   font-weight: 500;
   width: 100%;
   font-size: 16px;
-  
 }
-
 
 footer {
   display: block;
@@ -66,16 +64,20 @@ button {
   margin-top: 20px;
 }
 .logo {
-width: 10%;
-position: absolute;
-left: 3.5%;
-
+  width: 10%;
+  position: absolute;
+  left: 3.5%;
 }
 .topnav {
-  margin:0 auto;
+  text-align: center;
+  width: 100%;
+}
+.topnav a:first-child {
+  margin-left: 11%;
+  margin-right: 10px;
 }
 .topnav a {
-  padding: 1.2rem;
+  padding: 1rem;
 }
 body img {
   height: 50%;
@@ -88,50 +90,54 @@ body img {
   display: flex;
   background-size: cover;
   background-repeat: no-repeat;
-  
+  background-position: center center;
 }
 .company-section img {
-  width: 83%;
-  height: 83%;
-  margin-top: 7%;
-  margin-left: 7%;
+  min-width: 80%;
+  height: auto;
+  margin-left: 8%;
 }
+
 .container {
   display: block;
 }
 .left-content {
   color: #fff;
   padding-left: 12%;
-  padding-top: 3.5%;
-  width: 29%;
+  width: 28%;
 }
 .left-content p {
-  font-size: 26px;
+  font-size: 25px;
   color: white;
   line-height: 1.4;
+  padding-top: 5%;
 }
 .heading-title {
   font-size: 80px;
+  line-height: 1.1;
 }
-.right-content {
-  margin-bottom: 100px;
-}
+
 /* props-bar-section */
 .props-bar-section {
   width: 100%;
   height: 75px;
+  font-size: 16px;
+  
+  
 }
-.props-bar-section div {
+.props-bar-section span {
   height: 30px;
-  margin-left: 50px;
-  margin-right: 30px;
-  padding-top: 20px;
+  margin-right: 3.5%;
+  padding-top: 30px;
+  
 }
 .props-bar {
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: bold;
+ 
+
 }
 /* services-section */
 .services-section {
@@ -145,19 +151,34 @@ body img {
   position: relative;
   margin: 0 auto;
 }
-.services {
+.services-overlay {
   background-color: #5691fa;
   opacity: 0.88;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 1;
+ 
+}
+.services{
+  z-index: 2;
+  position: relative;
 }
 .services .content {
-  margin: 50px 350px 0px 350px;
-  font-size: 22px;
-  /* margin: 0 auto; 
-  text-align:center ; */
+  /* margin: 50px 350px 0px 350px; */
+  font-size: 20px;
+ 
+  text-align:center ;
+ margin:0 21%;
+  
 }
+
 .services .heading {
-  font-size: 36px;
-  margin-top: 100px;
+  font-size: 38px;
+  margin-top: 7%;
+  margin-bottom: 5%;
 }
 .services-flex-box {
   display: flex;
@@ -416,7 +437,6 @@ textarea {
   width: 100%;
 }
 
-
 /* end contact-form */
 .join-content-wrap-2 {
   background-color: #f3f7fc;
@@ -478,7 +498,7 @@ textarea {
   height: 2.5rem;
   background-color: rgb(59, 88, 151);
   border-radius: 65%;
-  margin-right:0.6rem;
+  margin-right: 0.6rem;
 }
 .link-icon {
   width: 2.5rem;
